@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+	<modules>
+		<module>service</module>
+        <module>functional-test</module>
+        <module>config</module>
+    </modules>
+
+	<parent>
+        <groupId>com.macys</groupId>
+        <artifactId>macys-parent</artifactId>
+        <version>1.0.66</version>
+    </parent>
+
+    <groupId>com.macys.account.xapi.accountxapi</groupId>
+    <artifactId>account-xapi-parent</artifactId>
+    <version>2.30.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>${project.artifactId}</name>
+
+    <properties>
+        <skipITs>false</skipITs>
+        <aspectj.version>1.8.9</aspectj.version>
+        <javers.version>3.0.0</javers.version>
+        <randombeans.version>3.1.0</randombeans.version>
+        <xapi.core.version>1.2.13</xapi.core.version>
+        <hystrix.metrics.event.stream.version>1.4.13</hystrix.metrics.event.stream.version>
+        <hystrix.dashboard.version>4.20.5</hystrix.dashboard.version>
+        <wiremock.version>2.6.0</wiremock.version>
+        <zookeeper.dks.switches.version>2.69.18</zookeeper.dks.switches.version>
+		<zookeeper.dks.client.version>2.48.1</zookeeper.dks.client.version>
+		<zookeeper.dks.core.version>3.25.2</zookeeper.dks.core.version>
+		<net.sf.json-lib.version>2.4</net.sf.json-lib.version>
+		<org.springframework.version>3.1.1.RELEASE</org.springframework.version>
+		<sonar.profile>xAPI</sonar.profile>
+    </properties>
+
+</project>

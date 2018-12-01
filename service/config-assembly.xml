@@ -1,0 +1,13 @@
+<assembly>
+	<id>account-xapi-config</id>
+    <formats>
+        <format>tar</format>
+    </formats>
+     <fileSets>
+        <fileSet>
+			<directory>target/envPropsDest</directory>
+            <outputDirectory>/config</outputDirectory>
+        </fileSet>
+    </fileSets> 
+</assembly>
+
