@@ -137,6 +137,29 @@
 
     <build>
         <plugins>
+    <plugin>
+        <groupId>org.cyclonedx</groupId>
+        <artifactId>cyclonedx-maven-plugin</artifactId>
+        <version>1.1.3</version>
+        <executions>
+            <execution>
+                <phase>verify</phase>
+                <goals>
+                    <goal>makeAggregateBom</goal>
+                </goals>
+            </execution>
+        </executions>
+        <configuration>
+            <includeCompileScope>true</includeCompileScope>
+            <includeProvidedScope>true</includeProvidedScope>
+            <includeRuntimeScope>true</includeRuntimeScope>
+            <includeSystemScope>true</includeSystemScope>
+            <includeTestScope>false</includeTestScope>
+        </configuration>
+    </plugin>
+
+		
+		
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
